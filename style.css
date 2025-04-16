@@ -83,12 +83,18 @@ nav button{
 .separation{
     height: 7px;
     background-color: rgb(46, 44, 44);
+    
 }
 
  .btn{
+    font-family: 'Martel Sans', sans-serif;
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
+    font-weight: 400;
+    color: white;
+    background-color:rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
     
  } 
  .btn-red{
@@ -97,7 +103,13 @@ nav button{
     padding:3px 24px ;
     font-size: 20px;
     border-radius: 4px;
+    font-weight: 400;
  }
+ .btn-red-sm{
+    background-color: red;
+    color: white;
+    
+  }
  .hero-buttons{
     display: flex;
     justify-content: center;
@@ -106,16 +118,51 @@ nav button{
  }
  .main input{
     padding:7px 101px 8px 14px ;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 12px;
+    color: white;
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5) ;
 
  }
- 
- .btn-red-sm{
-   background-color: red;
-   color: white;
-   
+ .first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
  }
+ .secImg{
+    position: relative;
+ }
+ .secImg Img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+    height: 20vw;
+    
+ }
+ .secImg video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 27vw;
+    
+ }
+
+ section.first > div{
+    display: flex;
+    flex-direction: column;
+ }
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
+    
+}
+
